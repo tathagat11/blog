@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on tathagat10</title>
     <link>https://tathagat10.com/tags/</link>
     <description>Recent content in Tags on tathagat10</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>tathagat10</title>
+      <url>https://tathagat10.com/images/profile.jpg</url>
+      <link>https://tathagat10.com/images/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Feb 2025 01:30:03 +0530</lastBuildDate>
     <atom:link href="https://tathagat10.com/tags/index.xml" rel="self" type="application/rss+xml" />

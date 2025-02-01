@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>tathagat10</title>
     <link>https://tathagat10.com/</link>
     <description>Recent content on tathagat10</description>
-    <generator>Hugo</generator>
+    <image>
+      <title>tathagat10</title>
+      <url>https://tathagat10.com/images/profile.jpg</url>
+      <link>https://tathagat10.com/images/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Feb 2025 01:30:03 +0530</lastBuildDate>
     <atom:link href="https://tathagat10.com/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +18,7 @@
       <link>https://tathagat10.com/blogs/llm/</link>
       <pubDate>Sat, 01 Feb 2025 01:30:03 +0530</pubDate>
       <guid>https://tathagat10.com/blogs/llm/</guid>
-      <description>&lt;h1 id=&#34;self-hosting-deepseek-r1-a-journey-into-local-llm-deployment&#34;&gt;Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment&lt;/h1&gt;&#xA;&lt;p&gt;In recent months, the landscape of artificial intelligence has witnessed a remarkable shift towards local deployment of Large Language Models (LLMs). As someone deeply fascinated by this evolution, I&amp;rsquo;ve embarked on a journey to self-host one of the most intriguing recent additions to the open-source LLM ecosystem: DeepSeek-R1. This blog post documents my experience and technical insights gained along the way.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-rise-of-local-llms&#34;&gt;The Rise of Local LLMs&lt;/h2&gt;&#xA;&lt;p&gt;The ability to run powerful language models locally has transformed from a mere possibility to a practical reality. This transformation isn&amp;rsquo;t just about technical capability – it&amp;rsquo;s about control, privacy, and the democratization of AI technology. When I first heard about DeepSeek-R1&amp;rsquo;s release, what caught my attention wasn&amp;rsquo;t just its impressive benchmarks, but the promise of running a model comparable to proprietary solutions on my own hardware.&lt;/p&gt;</description>
+      <description>Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment</description>
     </item>
   </channel>
 </rss>
