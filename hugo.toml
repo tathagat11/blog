@@ -2,7 +2,7 @@ baseURL = "https://tathagat10.com"
 title = "tathagat10"
 [pagination]
   pagerSize = 5
-theme = ["PaperMod"]
+theme = "PaperMod"
 
 enableRobotsTXT = true
 buildDrafts = false
@@ -22,7 +22,7 @@ buildExpired = false
   # author = ["Me", "You"] # multiple authors
   images = ["/images/profile.jpg"]
   DateFormat = "January 2, 2006"
-  defaultTheme = ["PaperMod"]
+  defaultTheme = "auto"
   disableThemeToggle = false
 
   ShowReadingTime = true
@@ -44,11 +44,11 @@ buildExpired = false
   [params.assets]
     # disableHLJS = true
     # disableFingerprinting = true
-    favicon = "<link / abs url>"
-    favicon16x16 = "<link / abs url>"
-    favicon32x32 = "<link / abs url>"
-    apple_touch_icon = "<link / abs url>"
-    safari_pinned_tab = "<link / abs url>"
+    # favicon = "<link / abs url>"
+    # favicon16x16 = "<link / abs url>"
+    # favicon32x32 = "<link / abs url>"
+    # apple_touch_icon = "<link / abs url>"
+    # safari_pinned_tab = "<link / abs url>"
 
   [params.label]
     text = "Home"
@@ -66,7 +66,7 @@ buildExpired = false
     
     [[params.profileMode.buttons]]
       name = "blogs"
-      url = "blogs"
+      url = "/blogs"
     [[params.profileMode.buttons]]
       name = "llm"
       url = "https://llm.tathagat10.com"
@@ -99,7 +99,7 @@ buildExpired = false
     hiddenInSingle = true
 
   [params.editPost]
-    URL = "https://github.com/blog/content"
+    URL = "https://github.com/tathagat11/blog/content"
     Text = "Suggest Changes"
     appendFilePath = true
 
