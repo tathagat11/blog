@@ -2,7 +2,7 @@ baseURL = "https://tathagat10.com"
 title = "tathagat10"
 [pagination]
   pagerSize = 5
-theme = "PaperMod"
+theme = ["PaperMod"]
 
 enableRobotsTXT = true
 buildDrafts = false
@@ -22,7 +22,7 @@ buildExpired = false
   # author = ["Me", "You"] # multiple authors
   images = ["/images/profile.jpg"]
   DateFormat = "January 2, 2006"
-  defaultTheme = "PaperMod"
+  defaultTheme = ["PaperMod"]
   disableThemeToggle = false
 
   ShowReadingTime = true
