@@ -142,7 +142,7 @@ try {
 
 # Push to site branch with force
 try {
-    git push origin site-deploy:site --force
+    git push origin site-deploy:site-deploy --force
 } catch {
     Write-Error "Failed to push to site branch."
     git branch -D site-deploy
