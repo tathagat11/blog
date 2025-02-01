@@ -94,9 +94,9 @@ buildExpired = false
       SiteVerificationTag = "XYZabc"
 
   [params.cover]
-    hidden = true
+    hidden = false
     hiddenInList = true
-    hiddenInSingle = true
+    hiddenInSingle = false
 
   [params.editPost]
     URL = "https://github.com/tathagat11/blog/content"

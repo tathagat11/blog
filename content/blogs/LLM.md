@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment"
+description: ""
 canonicalURL: "https://tathagat10.com"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -25,15 +25,15 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "/images/Pasted%20image%2020250201151549.png" # image path/url
-    alt: "<alt text>" # alt text
-    caption: "<text>" # display caption under cover
+    image: "/images/Pasted%20image%2020250201151549.png"
+    alt: "Image didn't load" # alt text
+    caption: "" # display caption under cover
     relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
+    hidden: false
 editPost:
-    URL: "https://github.com/tathagat11/blog"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    URL: "https://github.com/tathagat11/blog/blob/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
 ---
 # Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment
 
@@ -44,8 +44,6 @@ In recent months, the landscape of artificial intelligence has witnessed a remar
 The ability to run powerful language models locally has transformed from a mere possibility to a practical reality. This transformation isn't just about technical capability – it's about control, privacy, and the democratization of AI technology. When I first heard about DeepSeek-R1's release, what caught my attention wasn't just its impressive benchmarks, but the promise of running a model comparable to proprietary solutions on my own hardware.
 
 ## Why DeepSeek-R1?
-
-![Image Description](/images/Pasted%20image%2020250201151549.png)
 
 DeepSeek-R1 represents a fascinating development in the open-source AI community. As DeepSeek's first-generation reasoning model, it brings something special to the table. Built on the foundations of both Llama and Qwen architectures, it promises performance comparable to OpenAI's older models while maintaining the flexibility of open-source deployment.
 
