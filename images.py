@@ -15,22 +15,48 @@ for filename in os.listdir(posts_dir):
         with open(filepath, "r", encoding="utf-8") as file:
             content = file.read()
         
-        # Step 2: Find all image links with the preceding exclamation mark
-        images = re.findall(r'!\[\[([^]]*\.png)\]\]', content)
+        # Split frontmatter and content
+        parts = content.split("---", 2)
+        if len(parts) >= 3:
+            frontmatter = parts[1]
+            main_content = parts[2]
+        else:
+            continue  # Skip files without proper frontmatter
+
+        # Process images in main content
+        images = re.findall(r'!\[\[([^]]*\.png)\]\]', main_content)
         
-        # Step 3: Replace image links and ensure URLs are correctly formatted
+        # Process images in main content
         for image in images:
             # Prepare the Markdown-compatible link with %20 replacing spaces
             markdown_image = f"![Image Description](/images/{image.replace(' ', '%20')})"
-            content = content.replace(f"![[{image}]]", markdown_image)
+            main_content = main_content.replace(f"![[{image}]]", markdown_image)
             
-            # Step 4: Copy the image to the Hugo static/images directory if it exists
+            # Copy image to Hugo static directory
             image_source = os.path.join(attachments_dir, image)
             if os.path.exists(image_source):
                 shutil.copy(image_source, static_images_dir)
 
-        # Step 5: Write the updated content back to the markdown file
+        # Process cover image in frontmatter
+        cover_image_match = re.search(r'cover:\s*\n\s*image:\s*"?\[\[([^]]*\.(?:png|jpg|jpeg))\]\]"?', frontmatter)
+        if cover_image_match:
+            cover_image = cover_image_match.group(1)
+            # Update frontmatter with proper Hugo path
+            frontmatter = frontmatter.replace(
+                f"[[{cover_image}]]",
+                f"/images/{cover_image.replace(' ', '%20')}"
+            )
+            
+            # Copy cover image to Hugo static directory
+            cover_image_source = os.path.join(attachments_dir, cover_image)
+            if os.path.exists(cover_image_source):
+                shutil.copy(cover_image_source, static_images_dir)
+
+        # Reconstruct the file content
+        updated_content = f"---{frontmatter}---{main_content}"
+        
+        # Write the updated content back to the markdown file
         with open(filepath, "w", encoding="utf-8") as file:
-            file.write(content)
+            file.write(updated_content)
 
 print("Markdown files processed and images copied successfully.")
