@@ -1,5 +1,5 @@
-baseURL = "/"
-title = "ExampleSite"
+baseURL = "https://tathagat10.com"
+title = "tathagat10"
 [pagination]
   pagerSize = 5
 theme = "PaperMod"
@@ -15,14 +15,14 @@ buildExpired = false
 
 [params]
   env = "production"
-  title = "ExampleSite"
-  description = "ExampleSite description"
+  title = "tathagat's blog"
+  description = "a software engineer writing stuff"
   keywords = ["Blog", "Portfolio", "PaperMod"]
-  author = "Me"
+  author = "Tathagata Talukdar"
   # author = ["Me", "You"] # multiple authors
-  images = ["<link or path of image for opengraph, twitter-cards>"]
+  images = ["/images/profile.jpg"]
   DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
+  defaultTheme = "PaperMod"
   disableThemeToggle = false
 
   ShowReadingTime = true
@@ -56,34 +56,34 @@ buildExpired = false
     iconHeight = 35
 
   [params.profileMode]
-    enabled = false
-    title = "ExampleSite"
-    subtitle = "This is subtitle"
-    imageUrl = "<img location>"
+    enabled = true
+    title = "Tathagata Talukdar"
+    subtitle = ""
+    imageUrl = "/images/profile.jpg"
     imageWidth = 120
     imageHeight = 120
     imageTitle = "my image"
     
     [[params.profileMode.buttons]]
-      name = "Posts"
-      url = "posts"
+      name = "blogs"
+      url = "blogs"
     [[params.profileMode.buttons]]
-      name = "Tags"
-      url = "tags"
+      name = "llm"
+      url = "https://llm.tathagat10.com"
 
   [params.homeInfoParams]
-    Title = "Hi there 👋"
-    Content = "Welcome to my blog"
+    Title = "Tathagata Talukdar"
+    Content = "a software engineer writing stuff"
 
   [[params.socialIcons]]
-    name = "x"
-    url = "https://x.com/"
-  [[params.socialIcons]]
-    name = "stackoverflow"
-    url = "https://stackoverflow.com"
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/tathagata-talukdar/"
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/"
+    url = "https://github.com/tathagat11"
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/audishun"
 
   [params.analytics]
     [params.analytics.google]
@@ -99,7 +99,7 @@ buildExpired = false
     hiddenInSingle = true
 
   [params.editPost]
-    URL = "https://github.com/<path_to_repo>/content"
+    URL = "https://github.com/blog/content"
     Text = "Suggest Changes"
     appendFilePath = true
 
@@ -113,21 +113,21 @@ buildExpired = false
     limit = 10
     keys = ["title", "permalink", "summary", "content"]
 
-[[menu.main]]
-  identifier = "categories"
-  name = "categories"
-  url = "/categories/"
-  weight = 10
+# [[menu.main]]
+#  identifier = "categories"
+#  name = "categories"
+#  url = "/categories/"
+#  weight = 10
 [[menu.main]]
   identifier = "tags"
   name = "tags"
   url = "/tags/"
   weight = 20
-[[menu.main]]
-  identifier = "example"
-  name = "example.org"
-  url = "https://example.org"
-  weight = 30
+# [[menu.main]]
+#  identifier = "example"
+#  name = "example.org"
+#  url = "https://example.org"
+#  weight = 30
 
 pygmentsUseClasses = true
 
