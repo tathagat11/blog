@@ -15,48 +15,45 @@ for filename in os.listdir(posts_dir):
         with open(filepath, "r", encoding="utf-8") as file:
             content = file.read()
         
-        # Split frontmatter and content
+        # Split content into frontmatter and body
         parts = content.split("---", 2)
         if len(parts) >= 3:
             frontmatter = parts[1]
-            main_content = parts[2]
-        else:
-            continue  # Skip files without proper frontmatter
-
-        # Process images in main content
-        images = re.findall(r'!\[\[([^]]*\.png)\]\]', main_content)
-        
-        # Process images in main content
-        for image in images:
-            # Prepare the Markdown-compatible link with %20 replacing spaces
-            markdown_image = f"![Image Description](/images/{image.replace(' ', '%20')})"
-            main_content = main_content.replace(f"![[{image}]]", markdown_image)
+            body = parts[2]
             
-            # Copy image to Hugo static directory
-            image_source = os.path.join(attachments_dir, image)
-            if os.path.exists(image_source):
-                shutil.copy(image_source, static_images_dir)
-
-        # Process cover image in frontmatter
-        cover_image_match = re.search(r'cover:\s*\n\s*image:\s*"?\[\[([^]]*\.(?:png|jpg|jpeg))\]\]"?', frontmatter)
-        if cover_image_match:
-            cover_image = cover_image_match.group(1)
-            # Update frontmatter with proper Hugo path
-            frontmatter = frontmatter.replace(
-                f"[[{cover_image}]]",
-                f"/images/{cover_image.replace(' ', '%20')}"
-            )
+            # Handle cover image in frontmatter
+            frontmatter_matches = re.finditer(r'image:\s*!\[\[([^]]*\.png)\]\]', frontmatter)
+            for match in frontmatter_matches:
+                image = match.group(1)
+                # Format for cover image (theme format)
+                old_text = f"image: ![[{image}]]"
+                new_text = f'image: "/images/{image.replace(" ", "%20")}"'
+                frontmatter = frontmatter.replace(old_text, new_text)
+                
+                # Copy image if it exists
+                image_source = os.path.join(attachments_dir, image)
+                if os.path.exists(image_source):
+                    shutil.copy(image_source, static_images_dir)
             
-            # Copy cover image to Hugo static directory
-            cover_image_source = os.path.join(attachments_dir, cover_image)
-            if os.path.exists(cover_image_source):
-                shutil.copy(cover_image_source, static_images_dir)
-
-        # Reconstruct the file content
-        updated_content = f"---{frontmatter}---{main_content}"
-        
-        # Write the updated content back to the markdown file
-        with open(filepath, "w", encoding="utf-8") as file:
-            file.write(updated_content)
+            # Handle images in body
+            body_matches = re.finditer(r'!\[\[([^]]*\.png)\]\]', body)
+            for match in body_matches:
+                image = match.group(1)
+                # Format for body images (regular markdown)
+                old_text = f"![[{image}]]"
+                new_text = f'![Image Description](/images/{image.replace(" ", "%20")})'
+                body = body.replace(old_text, new_text)
+                
+                # Copy image if it exists
+                image_source = os.path.join(attachments_dir, image)
+                if os.path.exists(image_source):
+                    shutil.copy(image_source, static_images_dir)
+            
+            # Reconstruct the content
+            updated_content = f"---{frontmatter}---{body}"
+            
+            # Write the updated content back to the markdown file
+            with open(filepath, "w", encoding="utf-8") as file:
+                file.write(updated_content)
 
 print("Markdown files processed and images copied successfully.")
