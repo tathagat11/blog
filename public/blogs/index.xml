@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blogs on tathagat10</title>
-    <link>https://tathagat10.com/blogs/</link>
+    <link>http://localhost:1313/blogs/</link>
     <description>Recent content in Blogs on tathagat10</description>
     <image>
       <title>tathagat10</title>
-      <url>https://tathagat10.com/images/profile.jpg</url>
-      <link>https://tathagat10.com/images/profile.jpg</link>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <link>http://localhost:1313/images/profile.jpg</link>
     </image>
     <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Feb 2025 01:30:03 +0530</lastBuildDate>
-    <atom:link href="https://tathagat10.com/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Locally hosting llms</title>
-      <link>https://tathagat10.com/blogs/llm/</link>
+      <link>http://localhost:1313/blogs/llm/</link>
       <pubDate>Sat, 01 Feb 2025 01:30:03 +0530</pubDate>
-      <guid>https://tathagat10.com/blogs/llm/</guid>
+      <guid>http://localhost:1313/blogs/llm/</guid>
       <description>&lt;h1 id=&#34;self-hosting-deepseek-r1-a-journey-into-local-llm-deployment&#34;&gt;Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment&lt;/h1&gt;
 &lt;p&gt;In recent months, the landscape of artificial intelligence has witnessed a remarkable shift towards local deployment of Large Language Models (LLMs). As someone deeply fascinated by this evolution, I&amp;rsquo;ve embarked on a journey to self-host one of the most intriguing recent additions to the open-source LLM ecosystem: DeepSeek-R1. This blog post documents my experience and technical insights gained along the way.&lt;/p&gt;
 &lt;h2 id=&#34;the-rise-of-local-llms&#34;&gt;The Rise of Local LLMs&lt;/h2&gt;

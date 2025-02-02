@@ -42,17 +42,17 @@ buildExpired = false
   tocopen = false
 
   [params.assets]
-    # disableHLJS = true
-    # disableFingerprinting = true
-    # favicon = "<link / abs url>"
-    # favicon16x16 = "<link / abs url>"
-    # favicon32x32 = "<link / abs url>"
-    # apple_touch_icon = "<link / abs url>"
-    # safari_pinned_tab = "<link / abs url>"
+    disableHLJS = true
+    disableFingerprinting = true
+    favicon = "/icons/tt32.png"
+    favicon16x16 = "/icons/tt16.png"
+    favicon32x32 = "/icons/tt32.png"
+    apple_touch_icon = "/icons/tt512.png"
+    safari_pinned_tab = "/icons/tt1024.png"
 
   [params.label]
     text = "Home"
-    icon = "/apple-touch-icon.png"
+    icon = "/icons/tt512.png"
     iconHeight = 35
 
   [params.profileMode]
