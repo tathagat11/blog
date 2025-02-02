@@ -2,26 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blogs on tathagat10</title>
-    <link>http://localhost:1313/blogs/</link>
+    <link>https://tathagat10.com/blogs/</link>
     <description>Recent content in Blogs on tathagat10</description>
     <image>
       <title>tathagat10</title>
-      <url>http://localhost:1313/images/profile.jpg</url>
-      <link>http://localhost:1313/images/profile.jpg</link>
+      <url>https://tathagat10.com/images/profile.jpg</url>
+      <link>https://tathagat10.com/images/profile.jpg</link>
     </image>
     <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Feb 2025 01:30:03 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tathagat10.com/blogs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Locally hosting llms</title>
-      <link>http://localhost:1313/blogs/llm/</link>
+      <title>Hosting LLMs Locally</title>
+      <link>https://tathagat10.com/blogs/llm/</link>
       <pubDate>Sat, 01 Feb 2025 01:30:03 +0530</pubDate>
-      <guid>http://localhost:1313/blogs/llm/</guid>
+      <guid>https://tathagat10.com/blogs/llm/</guid>
       <description>&lt;h1 id=&#34;self-hosting-deepseek-r1-a-journey-into-local-llm-deployment&#34;&gt;Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment&lt;/h1&gt;
-&lt;p&gt;In recent months, the landscape of artificial intelligence has witnessed a remarkable shift towards local deployment of Large Language Models (LLMs). As someone deeply fascinated by this evolution, I&amp;rsquo;ve embarked on a journey to self-host one of the most intriguing recent additions to the open-source LLM ecosystem: DeepSeek-R1. This blog post documents my experience and technical insights gained along the way.&lt;/p&gt;
-&lt;h2 id=&#34;the-rise-of-local-llms&#34;&gt;The Rise of Local LLMs&lt;/h2&gt;
-&lt;p&gt;The ability to run powerful language models locally has transformed from a mere possibility to a practical reality. This transformation isn&amp;rsquo;t just about technical capability – it&amp;rsquo;s about control, privacy, and the democratization of AI technology. When I first heard about DeepSeek-R1&amp;rsquo;s release, what caught my attention wasn&amp;rsquo;t just its impressive benchmarks, but the promise of running a model comparable to proprietary solutions on my own hardware.&lt;/p&gt;</description>
+&lt;p&gt;We don&amp;rsquo;t need to talk about the relevance of LLM&amp;rsquo;s as of writing this blog. In this blog we go through my journey in trying to get a little bit of that power into my own hands, run an LLM locally and test out its viability for my day to day use. Of course, we are slowly starting to see the incredible potential and also the many weaknesses of these models. Unless you are sitting on some incredible hardware, most of us have to with distilled models and those are even more limited in power. With all that said, it is still nice having your own hands. I have kept technical terminologies and assumptions of prerequisite knowledge to minimum in this post as the people interested in trying this out may not all be from a technical background. Some of you might find some of it redundant, and too light at some places, so I have provided links to documentation and other source material wherever needed so you can dive deeper into the tools and technologies. Here is the system I went with, more about it, later.
+&lt;img alt=&#34;Image Description&#34; loading=&#34;lazy&#34; src=&#34;https://tathagat10.com/images/Pasted%20image%2020250202154554.png&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

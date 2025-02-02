@@ -3,6 +3,7 @@ title: Hosting LLMs Locally
 date: 2025-02-01T01:30:03+05:30
 tags:
   - llm
+  - Software
 author: Tathagata Talukdar
 showToc: true
 TocOpen: false
@@ -22,8 +23,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-  image:
-    - - Pasted image 20250201151549.png
+  image: "/images/Pasted%20image%2020250201151549.png"
   alt: Image didn't load
   caption: ""
   relative: false
