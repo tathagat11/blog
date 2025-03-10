@@ -16,7 +16,7 @@ buildExpired = false
 [params]
   env = "production"
   title = "tathagat's blog"
-  description = "a software engineer writing stuff"
+  description = "I like cars and tech"
   keywords = ["Blog", "Portfolio", "PaperMod"]
   author = "Tathagata Talukdar"
   # author = ["Me", "You"] # multiple authors
