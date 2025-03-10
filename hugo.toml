@@ -1,4 +1,4 @@
-baseURL = "https://tathagat10.com"
+baseURL = ""
 title = "tathagat10"
 [pagination]
   pagerSize = 5
@@ -16,7 +16,7 @@ buildExpired = false
 [params]
   env = "production"
   title = "tathagat's blog"
-  description = "I like cars and tech"
+  description = "a software engineer writing stuff, i like cars and tech"
   keywords = ["Blog", "Portfolio", "PaperMod"]
   author = "Tathagata Talukdar"
   # author = ["Me", "You"] # multiple authors
@@ -29,7 +29,7 @@ buildExpired = false
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
-  ShowCodeCopyButtons = false
+  ShowCodeCopyButtons = true
   ShowWordCount = true
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
@@ -58,7 +58,7 @@ buildExpired = false
   [params.profileMode]
     enabled = true
     title = "Tathagata Talukdar"
-    subtitle = ""
+    subtitle = "a software engineer writing stuff, i like cars and tech"
     imageUrl = "/images/profile.jpg"
     imageWidth = 120
     imageHeight = 120
@@ -67,9 +67,6 @@ buildExpired = false
     [[params.profileMode.buttons]]
       name = "blogs"
       url = "/blogs"
-    [[params.profileMode.buttons]]
-      name = "llm"
-      url = "https://llm.tathagat10.com"
 
   [params.homeInfoParams]
     Title = "Tathagata Talukdar"
