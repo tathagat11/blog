@@ -2,24 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tathagat10.com/blogs/</loc>
+    <loc>/blogs/</loc>
     <lastmod>2025-02-01T01:30:03+05:30</lastmod>
   </url><url>
-    <loc>https://tathagat10.com/blogs/llm/</loc>
+    <loc>/blogs/llm/</loc>
     <lastmod>2025-02-01T01:30:03+05:30</lastmod>
   </url><url>
-    <loc>https://tathagat10.com/tags/llm/</loc>
+    <loc>/tags/llm/</loc>
     <lastmod>2025-02-01T01:30:03+05:30</lastmod>
   </url><url>
-    <loc>https://tathagat10.com/tags/software/</loc>
+    <loc>/tags/software/</loc>
     <lastmod>2025-02-01T01:30:03+05:30</lastmod>
   </url><url>
-    <loc>https://tathagat10.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2025-02-01T01:30:03+05:30</lastmod>
   </url><url>
-    <loc>https://tathagat10.com/</loc>
+    <loc>/</loc>
     <lastmod>2025-02-01T01:30:03+05:30</lastmod>
   </url><url>
-    <loc>https://tathagat10.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>
