@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://tathagat10.github.com"
 title = "tathagat10"
 [pagination]
   pagerSize = 5
