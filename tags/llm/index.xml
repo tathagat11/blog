@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Llm on tathagat10</title>
-    <link>//localhost:1313/tags/llm/</link>
+    <link>http://localhost:1313/tags/llm/</link>
     <description>Recent content in Llm on tathagat10</description>
     <image>
       <title>tathagat10</title>
-      <url>//localhost:1313/images/profile.jpg</url>
-      <link>//localhost:1313/images/profile.jpg</link>
+      <url>http://localhost:1313/images/profile.jpg</url>
+      <link>http://localhost:1313/images/profile.jpg</link>
     </image>
     <generator>Hugo -- 0.142.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 01 Feb 2025 01:30:03 +0530</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hosting LLMs Locally</title>
-      <link>//localhost:1313/blogs/llm/</link>
+      <link>http://localhost:1313/blogs/llm/</link>
       <pubDate>Sat, 01 Feb 2025 01:30:03 +0530</pubDate>
-      <guid>//localhost:1313/blogs/llm/</guid>
+      <guid>http://localhost:1313/blogs/llm/</guid>
       <description>&lt;h1 id=&#34;self-hosting-deepseek-r1-a-journey-into-local-llm-deployment&#34;&gt;Self-Hosting DeepSeek-R1: A Journey into Local LLM Deployment&lt;/h1&gt;
 &lt;p&gt;We don&amp;rsquo;t need to talk about the relevance of LLM&amp;rsquo;s as of writing this blog. In this blog we go through my journey in trying to get a little bit of that power into my own hands, run an LLM locally and test out its viability for my day to day use. Of course, we are slowly starting to see the incredible potential and also the many weaknesses of these models. Unless you are sitting on some incredible hardware, most of us have to with distilled models and those are even more limited in power. With all that said, it is still nice having your own hands. I have kept technical terminologies and assumptions of prerequisite knowledge to minimum in this post as the people interested in trying this out may not all be from a technical background. Some of you might find some of it redundant, and too light at some places, so I have provided links to documentation and other source material wherever needed so you can dive deeper into the tools and technologies. Here is the system I went with, more about it, later.
-&lt;img alt=&#34;Image Description&#34; loading=&#34;lazy&#34; src=&#34;//localhost:1313/images/Pasted%20image%2020250202154554.png&#34;&gt;&lt;/p&gt;</description>
+&lt;img alt=&#34;Image Description&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/Pasted%20image%2020250202154554.png&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
